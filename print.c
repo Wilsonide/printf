@@ -23,10 +23,10 @@ for (i = 0; format[i] != '\0'; i++)
 		switch (format[i + 1])
 			{
 			case 'c':
-				count += _putchar(args(list, int));
+				count += _putchar(va_arg(list, int));
 				break;
 			case 's':
-				count += print_string(args(list, char *);
+				count += print_string(var_arg(list, char *);
 				break;
 			case '%':
 				count += _putchar('%');
