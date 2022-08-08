@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 /**
  * _printf - a function that displays to the outputstream
  * Description: c printf function
@@ -8,6 +9,8 @@
 
 int _printf(const char *format, ...)
 {
+va_list list;
+va_start(list, format);
 int count = 0;
 for (i = 0; format[i] != '\0'; i++)
 	{
